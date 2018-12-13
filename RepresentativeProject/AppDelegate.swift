@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        RepresentativeController.searchRepresentatives(forState: "CA") { (representatives) in
+//            let firstRepresentatives = representatives.first
+//            print(firstRepresentatives)
+//        }
+        
         return true
     }
 

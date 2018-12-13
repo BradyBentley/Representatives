@@ -17,6 +17,20 @@ class RepresentativeTableViewCell: UITableViewCell {
     @IBOutlet weak var websiteLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     
+    var representative: Representative? {
+        didSet{
+            updateView()
+            
+        }
+    }
     
+    func updateView() {
+        guard let representative = representative else { return }
+        nameLabel.text = representative.name
+        partyLabel.text = representative.party
+        districtLabel.text = representative.district
+        websiteLabel.text = representative.link
+        phoneLabel.text = representative.phone
+    }
     
 }

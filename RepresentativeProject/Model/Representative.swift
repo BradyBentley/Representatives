@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct TopLevelDictionary: Decodable {
+    let results: [Representative]
+}
+
 struct Representative: Decodable {
     let name: String
     let party: String
